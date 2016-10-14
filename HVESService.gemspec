@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "HVESService"
   spec.version       = HVESService::VERSION
   spec.authors       = ["leo"]
-  spec.email         = ["leo@hipvan.com"]
+  spec.email         = ["coder.leo.le@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Elastic search service for Hipvan project}
+  spec.description   = %q{This gem is a bridge for interating with elastic search services so that other components can use}
+  spec.homepage      = "https://github.com/leo-le-07/HVESService"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
