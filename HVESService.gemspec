@@ -29,12 +29,19 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.13"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-
+  # ========== PRODUCTION =============
   # elasticsearch
+  spec.add_dependency 'elasticsearch', '~> 2.0'
   spec.add_dependency 'elasticsearch-ruby', '~> 0.0.4'
   spec.add_dependency 'elasticsearch-rails', '~> 0.1.9'
   spec.add_dependency 'elasticsearch-model', '~> 0.1.9'
+  spec.add_dependency 'require_all', '~> 1.3', '>= 1.3.3'
+  
+  # ========== DEVELOPMENT =============
+  spec.add_development_dependency "bundler", "~> 1.13"
+  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency 'byebug', '~> 9.0', '>= 9.0.5'
+
+  # ========== TEST =============
 end
