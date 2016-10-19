@@ -27,7 +27,6 @@ module SearchServices
             author: user.name,
             created_at: created_at,
             updated_at: updated_at,
-            # seo_data: blog_seo_decorator.seo_data,
             seo_data: {},
             main_image: main_image,
             categories: categories
@@ -55,13 +54,13 @@ module SearchServices
         #   categories[category.to_sym]
         # end
 
-        # def json_format_for(name)
-        #   {
-        #     name: name,
-        #     handle: name.parameterize,
-        #     relative_url: "/blog/#{name.parameterize}"
-        #   }
-        # end
+        def json_format_for(name)
+          {
+            name: name,
+            handle: name.parameterize,
+            relative_url: "/blog/#{name.parameterize}"
+          }
+        end
 
         def main_image
           {}

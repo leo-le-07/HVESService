@@ -35,7 +35,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'elasticsearch-ruby', '~> 0.0.4'
   spec.add_dependency 'elasticsearch-rails', '~> 0.1.9'
   spec.add_dependency 'elasticsearch-model', '~> 0.1.9'
-  spec.add_dependency 'require_all', '~> 1.3', '>= 1.3.3'
   
   # ========== DEVELOPMENT =============
   spec.add_development_dependency "bundler", "~> 1.13"
