@@ -1,6 +1,9 @@
+require 'byebug'
 require 'helpers/file_loader'
 
-Helpers::FileLoader.require_all('../../lib')
+ROOT_PATH = File.expand_path '../..', __FILE__
+
+Helpers::FileLoader.require_all(ROOT_PATH + '/lib')
 
 module HVESService
   Blog = Struct.new(:id, :title, :hidden) do
@@ -10,7 +13,7 @@ module HVESService
   end
 
   def syn(blogs)
-    Helpers::HvLog.log.info 'I like so I print'
+    Helpers::LogHelper.info 'I like so I print'
 
     # blogs = []
     # blogs.push(Blog.new(1, 'Title blog hidden', true))
